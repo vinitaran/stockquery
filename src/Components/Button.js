@@ -3,7 +3,7 @@ import "./Button.css";
 
 const STYLES = ['btn--primary','btn--outline'];
 
-const SIZES = ['btn--medium','btn--large','btn--mobile'];
+const SIZES = ['btn--medium','btn--large','btn--mobile','btn--wide'];
 
 const COLORS = ['primary', 'blue', 'red', 'green'];
 
@@ -11,6 +11,8 @@ export const Button = ({
     children,
     type,
     onClick,
+    onMouseEnter,
+    onMouseLeave,
     buttonStyle,
     buttonSize,
     buttonColor
@@ -21,6 +23,6 @@ export const Button = ({
     const checkButtonColor = COLORS.includes(buttonColor) ? buttonColor : null;
 
     return(
-        <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} onClick={onClick} type={type}>{children}</button>
+        <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick} type={type}>{children}</button>
     )
 }
