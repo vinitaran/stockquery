@@ -8,7 +8,7 @@ import Dropdown from './Dropdown';
 
 const Navbar = () => {
 const [click, setClick] = useState(false);
-const [button, setButton] = useState(true);
+// const [button, setButton] = useState(true);
 const [dropdown, setDropdown] = useState(false);
 
 const handleClick = () => setClick(!click);
@@ -70,17 +70,9 @@ return (
 						</NavLink>
 					</li>
 					<li className="nav_btn">
-						{button ? (
 							<Link to="/sign-up" className="btn_links" onClick={closeMobileMenu}>
 								<Button buttonStyle="btn--outline">SIGN UP</Button>
 							</Link>
-						) : (
-							<Link to="/sign-up" className="btn_links" onClick={closeMobileMenu}>
-								<Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-									SIGN UP
-								</Button>
-							</Link>
-						)}
 					</li>
 				</ul>
 			</div>
