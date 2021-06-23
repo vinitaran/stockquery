@@ -30,28 +30,21 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <Link to='/sign-up'>Index Watch</Link>
-            <Link to='/'>Short Term Swing Trades</Link>
-            <Link to='/'>Long Term Positional Trades</Link>
+            <Link to='/index-watch'>Index Watch</Link>
+            <Link to='/short-term'>Short Term Swing Trades</Link>
+            <Link to='/long-term'>Long Term Positional Trades</Link>
             <Link to='/'>Mutual Fund</Link>
-            <Link to='/'>Exchange Traded Funds</Link>
+            <Link to='/etf'>Exchange Traded Funds</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <Link to='/'>Online IPO</Link>
+            <Link to='/online-ipo'>Online IPO</Link>
             <Link to='/'>Disclaimer</Link>
             <Link to='/'>Trading Rules</Link>
             <Link to='/'>Zerodha Information</Link>
             <Link to='/'>Zerodha signup</Link>
           </div>
-          {/* <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div> */}
         </div>
       </div>
       <section class='social-media'>

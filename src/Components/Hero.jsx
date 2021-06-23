@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Hero.css";
-import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import img1 from "../Components/images/svg-1.svg";
 import img2 from "../Components/images/svg-2.svg";
 import img3 from "../Components/images/svg-4.svg";
 import { TickerTape, Screener } from "react-tradingview-embed";
 import Card from "./Card";
+import Fade from 'react-reveal/Fade';
 
 const Hero = () => {
 	return (
@@ -47,7 +47,10 @@ const Hero = () => {
 					<div className="row home__hero-row">
 						<div className="col">
 							<div className="home__hero-img-wrapper">
-								<img src={img2} alt="hero" className="home__hero-img" />
+								<Fade left >
+									<img src={img2} alt="hero" className="home__hero-img" />
+								</Fade>
+
 							</div>
 							<div className="home__hero-text-wrapper">
 								<h2 className="heading">StockQuery is REAL</h2>
@@ -55,7 +58,10 @@ const Hero = () => {
 						</div>
 						<div className="col">
 							<div className="home__hero-img-wrapper">
-								<img src={img3} alt="hero" className="home__hero-img" />
+								<Fade top >
+									<img src={img3} alt="hero" className="home__hero-img" />
+								</Fade>
+
 							</div>
 							<div className="home__hero-text-wrapper">
 								<h2 className="heading">StockQuery is SAFE</h2>
@@ -63,7 +69,10 @@ const Hero = () => {
 						</div>
 						<div className="col">
 							<div className="home__hero-img-wrapper">
-								<img src={img1} alt="hero" className="home__hero-img" />
+								<Fade right>
+									<img src={img1} alt="hero" className="home__hero-img" />
+								</Fade>
+
 							</div>
 							<div className="home__hero-text-wrapper">
 								<h2 className="heading">StockQuery is FREE</h2>
@@ -73,24 +82,8 @@ const Hero = () => {
 				</div>
 				<div className="container">
 					<div className="homePage__buttons">
-						<Link to="/sign-up">
-							<Button
-								className="homePageBtn"
-								buttonSize="btn--wide"
-								buttonColor="blue"
-							>
-								Get Started
-							</Button>
-						</Link>
-						<Link to="/sign-up">
-							<Button
-								className="homePageBtn"
-								buttonSize="btn--wide"
-								buttonColor="blue"
-							>
-								Contact us
-							</Button>
-						</Link>
+						<button class="custom-btn btn-16"><span><Link to="/">Get Started</Link></span></button>
+						<button class="custom-btn btn-16"><span><Link to="/">Contact us</Link></span></button>
 					</div>
 				</div>
 				{/* <button class="button  arrow">Read more</button>
@@ -113,19 +106,20 @@ const Hero = () => {
 							movement of BSE NSE Stocks, Index, Mutual Fund, ETF, Long Term
 							Investment and Short Term investment.
 						</p>
-						
+
 					</div>
 					<div className="hero__content__bottom">
-							<p>
-								<b>
-									There are many share market tips provider in India charging
-									8000 to 15000 per month. But this site is absolutely free to
-									use. Learn and make money out of it.
-								</b>{" "}
-							</p>
-						</div>
+						<p>
+							<b>
+								There are many share market tips provider in India charging
+								8000 to 15000 per month. But this site is absolutely free to
+								use. Learn and make money out of it.
+							</b>{" "}
+						</p>
+					</div>
 				</div>
-				<h1>Live Market</h1>
+				<h2>Live Market</h2>
+				<Fade left>
 				<Screener
 					widgetProps={{
 						colorTheme: "light",
@@ -134,6 +128,7 @@ const Hero = () => {
 						width: "100%",
 					}}
 				/>
+				</Fade>
 				<Card />
 			</div>
 		</>

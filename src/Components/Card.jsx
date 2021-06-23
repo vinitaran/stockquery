@@ -3,13 +3,15 @@ import './Card.css';
 import CardItem from './CardItem';
 import graphImage from './images/graph.jpg';
 import index from './images/index-watch.jpg';
+import Fade from 'react-reveal/Fade';
 
 function Card() {
   return (
     <div className='cards'>
-      <h1>Our Services!</h1>
+      <h2>Our Services!</h2>
       <div className='cards__container'>
         <div className='cards__wrapper'>
+          <Fade top>
           <ul className='cards__items'>
             <CardItem
               src={index}
@@ -24,6 +26,8 @@ function Card() {
               path='/services'
             />
           </ul>
+          </Fade>
+          <Fade left>
           <ul className='cards__items'>
             <CardItem
               src='https://images.unsplash.com/photo-1620266757065-5814239881fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80'
@@ -38,6 +42,8 @@ function Card() {
               path='/mutual-fund'
             />
           </ul>
+          </Fade>
+          <Fade bottom>
           <ul className='cards__items'>
             <CardItem
               src='https://finmarie.com/wp-content/uploads/2020/02/What-ETF-Means-What-It-Is-What-It-Does-And-More-e1582822089129.jpg'
@@ -52,6 +58,7 @@ function Card() {
               path='/products'
             />
           </ul>
+          </Fade>
         </div>
       </div>
     </div>

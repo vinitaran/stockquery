@@ -3,6 +3,12 @@ import Navbar from './Components/Navbar';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Hero from './Components/Hero';
 import Footer from './Components/Footer';
+import Index from './Components/pages/Index';
+import ShortTS from './Components/pages/ShortTS';
+import LongTS from './Components/pages/LongTS';
+import exchangeTS from './Components/pages/exchangeTS';
+import IpoTS from './Components/pages/IpoTS';
+import Pricing from './Components/Pricing/Pricing';
 
 function App() {
   return (
@@ -10,9 +16,19 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Hero />
           </Route>
+          <Route path="/index-watch">
+            <Index />
+          </Route>
+          <Route path="/short-term">
+            <ShortTS />
+          </Route>
+          <Route path="/long-term" component={LongTS} />
+          <Route path="/etf" component={exchangeTS} />
+          <Route path="/online-ipo" component={IpoTS} />
+          <Route path="/plans" component={Pricing} />
         </Switch>
         <Footer />
       </BrowserRouter>
