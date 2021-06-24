@@ -27,20 +27,20 @@ const IpoTS = () => {
 						href="pdf/Online IPO application through HDFC Bank.pdf"
 						target="_blank"
 					>
+						<FaFilePdf style={{ height: "2em", width: "2em", margin: "5px" }} />
 						<h4>
 							<b>HDFC Online IPO Application Process</b>
 						</h4>
-						<FaFilePdf />
 					</a>
 
 					<a
 						href="pdf/Online IPO application through ICICI Bank.pdf"
 						target="_blank"
 					>
+						<FaFilePdf style={{ height: "2em", width: "2em", margin: "5px" }} />
 						<h4>
 							<b>ICICI Online IPO Application Process</b>
 						</h4>
-						<FaFilePdf />
 					</a>
 				</div>
 			</div>
