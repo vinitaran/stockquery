@@ -1,5 +1,5 @@
 .mainPage__heading{
-    margin: 50px;
+    margin: 30px;
     color: #1c2237;
     display: flex;
     align-items: center;
@@ -79,3 +79,60 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+.excelsheet > iframe {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+    } 
+
+.glowingButton {
+    background-color: #1c87c9;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes glowing {
+    0% {
+      background-color: #1c2237;
+      box-shadow: 0 0 5px #1c2237;
+    }
+    100% {
+      background-color: #20273f;
+      box-shadow: 0 0 20px #20273f;
+    }
+  }
+  .glowingButton {
+    animation: glowing 1300ms infinite;
+  }
+
+  .signup__main{
+      display: flex;
+  }
+
+  #loginVideo{
+      margin: 20px;
+  }
+
+  .signup__button{
+      display: flex;
+      justify-content: center;
+  }
