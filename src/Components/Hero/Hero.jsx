@@ -1,5 +1,4 @@
 import React from "react";
-import "./Hero.css";
 import { Link } from "react-router-dom";
 import img1 from "../images/svg-1.svg";
 import img2 from "../images/svg-2.svg";
@@ -82,8 +81,8 @@ const Hero = () => {
 				</div>
 				<div className="container">
 					<div className="homePage__buttons">
-						<button class="custom-btn btn-16"><span><Link to="/">Get Started</Link></span></button>
-						<button class="custom-btn btn-16"><span><Link to="/">Contact us</Link></span></button>
+						<button class="custom-btn btn-16"><span><Link to="/sign-up">Get Started</Link></span></button>
+						<button class="custom-btn btn-16"><span><Link to="/contact">Contact us</Link></span></button>
 					</div>
 				</div>
 				{/* <button class="button  arrow">Read more</button>

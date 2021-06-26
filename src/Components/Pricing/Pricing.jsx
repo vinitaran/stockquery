@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from '../Buttons/Button';
-import './Pricing.css';
 import { FaFire } from 'react-icons/fa';
 import { BsXDiamondFill } from 'react-icons/bs';
 import { GiCrystalize } from 'react-icons/gi';

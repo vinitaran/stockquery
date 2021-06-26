@@ -1,5 +1,5 @@
 import React from "react";
-import "./Mainpage.css";
+// import '../styles/style.scss';
 import CustomizedTables from "../table/Table";
 
 const Index = () => {

@@ -1,0 +1,11 @@
+@import "./variables";
+
+.contactContainer{
+    @include flexPosition(center,center);
+    flex-direction: column;
+}
+
+.contact__content{
+    text-align: center;
+    font-size: 1.2rem;
+}

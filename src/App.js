@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Hero from './Components/Hero/Hero';
@@ -11,11 +11,14 @@ import IpoTS from './Components/pages/IpoTS';
 import Pricing from './Components/Pricing/Pricing';
 import Signup from './Components/pages/Signup';
 import Contact from './Components/Contact/Contact';
+import './Components/styles/style.scss';
+import ScrollToTop from './Components/Scroll/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollToTop />
         <Navbar />
         <Switch>
           <Route exact path="/">

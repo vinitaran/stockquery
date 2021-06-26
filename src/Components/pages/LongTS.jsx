@@ -1,6 +1,6 @@
 import CustomizedTables from "../table/Table";
 import React from "react";
-import "./Mainpage.css";
+// import '../styles/style.scss';
 
 const LongTS = () => {
 	function createData(name, nifty, banknifty) {

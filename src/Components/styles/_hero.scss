@@ -1,5 +1,7 @@
+@import './variables';
+
 .home__hero-section {
-    color: #fff;
+    color: $primaryColor;
     min-height: 520px;
     display: flex;
     flex-direction: column;
@@ -57,11 +59,11 @@
   }
   
   .dark {
-    color: #1c2237;
+    color: $mainTheme;
   }
   
   .darkBg {
-    background-color: #1c2237;
+    background-color: $mainTheme;
   }
   
   .home__hero-subtitle {
@@ -80,12 +82,6 @@
   }
   
   .home__hero-img {
-    /* max-width: 95%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 10px;
-    padding-right: 0; */
-    
     height: 180px;
   }
   

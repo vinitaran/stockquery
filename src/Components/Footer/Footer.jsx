@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+// import '../styles/style.scss';
 import { Link } from 'react-router-dom';
 import {RiStockFill} from "react-icons/ri"
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';

@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import { FaAngleDown, FaBars, FaTimes } from "react-icons/fa";
 import { RiStockFill } from "react-icons/ri";
 import { Button } from "../Buttons/Button";
-import "./Navbar.css";
 import Dropdown from './Dropdown';
 
 const Navbar = () => {

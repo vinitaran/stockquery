@@ -1,9 +1,8 @@
+@import './variables';
+
 .navbar {
-    background: #1c2237;
+    background: $mainTheme;
     height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
@@ -27,7 +26,7 @@
   }
 
   .navbar_logo {
-    color: #fff;
+    color: $primaryColor;
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
@@ -41,9 +40,7 @@
   }
  
   .nav_menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexPosition(center,center);
     list-style: none;
     text-align: center;
     justify-content: flex-end;
@@ -63,7 +60,7 @@
   }
   
   .nav_links {
-    color: #fff;
+    color: $primaryColor;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -72,7 +69,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color: $primaryColor;
   }
   
   .menu_icon {
@@ -105,7 +102,7 @@
     }
   
     .nav_menu.active {
-      background: #1c2237;
+      background: $mainTheme;
       left: 0;
       opacity: 1;
       transition: all 0.6s ease;
@@ -149,11 +146,11 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: #fff;
+      color: $primaryColor;
     }
   
     .fa-times {
-      color: #fff;
+      color: $primaryColor;
       font-size: 2rem;
     }
   

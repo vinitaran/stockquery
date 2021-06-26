@@ -1,9 +1,10 @@
+@import './variables';
+
 .mainPage__heading{
-    margin: 30px;
-    color: #1c2237;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 40px;
+    color: $mainTheme;
+    @include flexPosition(center,center);
+    text-decoration: underline;
 }
 
 
@@ -31,6 +32,9 @@
 .mainPage__def {
     margin:10px;
     padding-bottom: 20px;
+    a{
+      margin: 20px;
+    }
 }
 
 .excelsheet{
@@ -39,16 +43,10 @@
 }
 
 .ipo__options{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flexPosition(space-evenly,center);
     margin: 20px;
     margin-bottom: 40px;
 }
-
-/* .ipo__options > a {
-    color: white;
-} */
 
 button {
     /* margin: 20px; */
@@ -57,7 +55,7 @@ button {
   .custom-btn {
     width: 300px;
     padding: 10px 25px;
-    border: 2px solid #fff;
+    border: 2px solid $primaryColor;
     font-family: 'Lato', sans-serif;
     font-size:20px;
     font-weight: 500;
@@ -71,8 +69,8 @@ button {
   .ipo__options > 
   a {
       transition: all .5s ease;
-      color: #1c2237;
-      border: 3px solid #1c2237;
+      color: $mainTheme;
+      border: 3px solid $mainTheme;
       font-family:'Montserrat', sans-serif;
       text-transform: uppercase;
       text-align: center;
@@ -86,8 +84,8 @@ button {
       align-items: center;
   }
   .ipo__options > a:hover {
-      color: white;
-      background-color: #1c2237;
+      color: $primaryColor;
+      background-color: $mainTheme;
   }
 
 a{
@@ -127,8 +125,8 @@ a{
   }
   @keyframes glowing {
     0% {
-      background-color: #1c2237;
-      box-shadow: 0 0 5px #1c2237;
+      background-color: $mainTheme;
+      box-shadow: 0 0 5px $mainTheme;
     }
     100% {
       background-color: #20273f;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Mainpage.css";
+// import '../styles/style.scss';
 import { FaFilePdf } from "react-icons/fa";
 // import { Link } from "react-router-dom";
 

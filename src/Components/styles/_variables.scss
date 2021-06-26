@@ -1,0 +1,8 @@
+$mainTheme: #1c2237;
+$primaryColor: #fff;
+
+@mixin flexPosition($hor,$ver){
+    display: flex;
+    justify-content: $hor;
+    align-items: $ver;
+}
