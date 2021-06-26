@@ -12,7 +12,7 @@ const Signup = () => {
                 <div className="excelsheet" style={{margin:"0"}}>
                     <iframe title="Registration form" id="myframe" src="https://zerodha.com/iframe-form/?id=zmpsmc" style={{"width":"310px", "height":"400px"}}></iframe>
                 </div>
-                <video src={video1} width="900" height="400" id="loginVideo" controls="controls" autoplay="true" />
+                <video src={video1} width="100%" height="400" id="loginVideo" controls="controls" autoplay="true" />
                 </div>
                 <div className="signup__button">
                 <button type="submit" class="glowingButton">After Submitting the Form Please Click Here!</button>
